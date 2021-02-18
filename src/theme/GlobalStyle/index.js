@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components'
-import { normalize} from 'styled-normalize'
+import { normalize } from 'styled-normalize'
 import { breakpointsMedia } from '../../theme/utils/breakpointsMedia'
 
 const GlobalStyle = createGlobalStyle`
@@ -39,10 +39,11 @@ const GlobalStyle = createGlobalStyle`
     }
     :root{
         ${breakpointsMedia({
-    xs: css`
-    font-size: .8rem;         `,
-    md: css`
-       font-size: 1.2rem;  
+            xs: css`
+                font-size: 2.7vw;         
+            `,
+            md: css`
+                font-size: 1.2vw;  
         `
 })}}
 `
