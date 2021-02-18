@@ -26,6 +26,6 @@ export const typographyVariants = {
     fontSize: '1rem',
     fontWeight: '400',
     lineHeight: 1.25,
-    letterSpacing: '.02em'
+    letterSpacing: '.01em'
   },
 }; 

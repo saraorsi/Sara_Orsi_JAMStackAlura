@@ -34,7 +34,7 @@ export default function Capa() {
             <Text
                 variant="paragraph1"
                 tag="div"
-                style={{fontFamily:'Arial'}}
+                style={{fontFamily:'Helvetica'}}
             >
                 WEB STUDIO
             </Text>

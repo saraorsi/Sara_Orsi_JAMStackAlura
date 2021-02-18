@@ -39,7 +39,8 @@ CardWrapper.Date = styled.div`
     top: 1.5rem;
     text-align: center;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: .03em;
 `
 
 CardWrapper.Title = styled.div` 
@@ -51,7 +52,7 @@ CardWrapper.Title = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
 `
 
 CardWrapper.Info = styled.div`
