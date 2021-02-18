@@ -30,7 +30,7 @@ CardWrapper.Image = styled.div`
     ${propToStyle('backgroundRepeat')}
     ${propToStyle('backgroundPosition')}
     ${propToStyle('backgroundSize')}
-    filter: blur(10px);
+    filter: blur(6px);
     opacity: .7;
 `
 

@@ -58,6 +58,8 @@ MenuWrapper.Switch = styled.span`
         justify-content: center;
         align-items: center;
         svg{
+            margin-top: .1rem;
+            margin-left: .2rem;
             height: 1.5rem;
             width: auto;
         }

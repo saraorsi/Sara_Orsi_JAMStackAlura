@@ -27,21 +27,21 @@ export default function Home() {
   const projects = [
     {
       date: '2020',
-      title: 'Galerias Municipais',
+      title: 'Rialto6',
       info: 'Web Design / Front End / Wordpress',
-      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+      img: '/images/rialto6.jpg'
     },
     {
       date: '2020',
-      title: 'Galeria Zé dos Bois',
+      title: 'Doclisboa',
       info: 'Web Design / Front End / Wordpress',
-      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+      img: '/images/doclisboa.jpg'
     },
     {
       date: '2020',
-      title: 'Galeria Zé dos Bois',
+      title: 'Air 351',
       info: 'Web Design / Front End / Wordpress',
-      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+      img: '/images/air351.jpg'
     }
   ]
 

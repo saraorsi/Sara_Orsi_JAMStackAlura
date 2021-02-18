@@ -1,7 +1,7 @@
 export const typographyVariants = {
   // [title]
   title: {
-    fontSize: '9rem',
+    fontSize: '8.5rem',
     fontWeight: '400',
     lineHeight: 1,
     letterSpacing: '.04em'

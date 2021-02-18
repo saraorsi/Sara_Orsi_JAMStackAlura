@@ -14,9 +14,11 @@ const CapaWrapper = styled.div`
     background: linear-gradient(${({ theme }) => theme.colors.background.main.color}, ${({ theme }) => theme.colors.background.light.color});
     h1{
         text-shadow: .03em .03em .06em ${({ theme }) => theme.colors.primary.main. contrastText};
+            text-shadow: .03em .03em .06em ${({ theme }) => theme.colors.primary.main. contrastText};
     }
     div{
         text-shadow: .1em .1em .2em ${({ theme }) => theme.colors.primary.main. contrastText};
+        letter-spacing: .08em;
     }
 `
 

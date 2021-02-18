@@ -1,39 +1,22 @@
 
 import { typographyVariants }from './typographyVariants'
+
+const main = '#0000FF';
+const contrast = '#FFFFFF';
+
 export const colors = {
     background: {
       light: {
-        color: '#FFFFFF',
+        color: contrast,
       },
       main: {
-        color: '#0000FF',
-      },
-    },
-    borders: {
-      main: {
-        color: '#F1F1F1',
+        color: main,
       },
     },
     primary: {
       main: {
-        color: '#FFFFFF',
-        contrastText: '#0000FF',
-      },
-    },
-    secondary: {
-      main: {
-        color: '#FB7B6B',
-        contrastText: '#fff',
-      },
-    },
-    tertiary: {
-      main: {
-        color: '#070C0E',
-        contrastText: '#fff',
-      },
-      light: {
-        color: '#88989E',
-        contrastText: '#fff',
+        color: contrast,
+        contrastText: main,
       },
     },
     modes: {
