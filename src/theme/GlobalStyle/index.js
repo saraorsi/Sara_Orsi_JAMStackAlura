@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { createGlobalStyle, css } from 'styled-components'
+import { normalize} from 'styled-normalize'
+import { breakpointsMedia } from '../../theme/utils/breakpointsMedia'
 
 const GlobalStyle = createGlobalStyle`
     ${normalize}
@@ -22,31 +23,27 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
   
-
-    :root{
-        font-size: 1.2vw;
-    }
-
     html,
-        body {
-            font-family: ${({ theme }) => theme.fontFamily};
-            color: ${({ theme }) => theme.colors.primary.main.color};
-        }
-
-    html, body {
-        height: 100vh;
-        width: 100%;
+    body {
+        font-family: ${({ theme }) => theme.fontFamily};
+        color: ${({ theme }) => theme.colors.primary.main.color};
+        height: 100%;
+    width: 100%;
     }
+
+
     #__next {
         flex: 1;
         display: flex;
         flex-direction: column;
     }
-
-    @media screen and (max-width: 577px) {
-        :root{
-        font-size: 2.7vw;
-    }
-    }
+    :root{
+        ${breakpointsMedia({
+    xs: css`
+    font-size: .8rem;         `,
+    md: css`
+       font-size: 1.2rem;  
+        `
+})}}
 `
 export default GlobalStyle;

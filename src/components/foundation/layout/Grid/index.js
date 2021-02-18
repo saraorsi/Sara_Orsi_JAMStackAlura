@@ -11,24 +11,18 @@ const Container = styled.div`
       margin-left: auto;
       ${breakpointsMedia({
   xs: css`
+
         max-width: initial;
         padding-right: 2rem;
         padding-left: 2rem;
       `,
-  sm: css`
-        max-width: 576px; 
-      `,
+
   md: css`
-        max-width: 768px;
+
         padding-right: 3rem;
       padding-left: 3rem;
       `,
-  lg: css`
-        max-width: 1160px; 
-      `,
-  xl: css`
-        max-width: 100%;
-      `,
+
 })}
 ${propToStyle('marginTop')}
     `
