@@ -14,13 +14,13 @@ export default function Home() {
       date: '2020',
       title: 'Galerias Municipais',
       info: 'Web Design / Front End / Wordpress',
-      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+      img: '/images/galerias-municipais.jpg'
     },
     {
       date: '2020',
       title: 'Galeria Zé dos Bois',
       info: 'Web Design / Front End / Wordpress',
-      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+      img: '/images/ze-dos-bois.jpg'
     }
   ]
 
