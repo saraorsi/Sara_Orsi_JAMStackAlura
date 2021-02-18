@@ -1,13 +1,14 @@
 import styled, { css } from 'styled-components'
 import Link from 'next/link'
 import { TextStyleVariantsMap } from '../../foundation/Text'
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 
 const MenuWrapper = styled.div`
     margin-top: 100vh;
     position: sticky;
     top: 0;
-    height: 45px;
+    height: 4rem;
     z-index: 20;
     display: flex;
     justify-content: space-between;
@@ -15,7 +16,15 @@ const MenuWrapper = styled.div`
     text-transform: uppercase;
      ${TextStyleVariantsMap.subTitle}
      padding: 3rem;
-     text-shadow: .1em .1em .2em ${({ theme }) => theme.colors.primary.main. contrastText};
+     text-shadow: .1em .1em .2em ${({ theme }) => theme.colors.primary.main.contrastText};
+     ${breakpointsMedia({
+    xs: css`
+                padding: 2rem;
+         `,
+    md: css`
+       padding: 3rem;
+        `
+})}
 `
 
 MenuWrapper.LeftSide = styled.div`

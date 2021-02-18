@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
   
 
     :root{
@@ -36,6 +41,12 @@ const GlobalStyle = createGlobalStyle`
         flex: 1;
         display: flex;
         flex-direction: column;
+    }
+
+    @media screen and (max-width: 577px) {
+        :root{
+        font-size: 2.7vw;
+    }
     }
 `
 export default GlobalStyle;

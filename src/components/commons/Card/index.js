@@ -11,6 +11,7 @@ const CardWrapper = styled.div`
     background: #FFF;
     border-radius: 1.5rem;
     text-shadow: .1em .1em .2em ${({ theme }) => theme.colors.primary.main.color};
+    margin-bottom: 2rem;
     &:hover{
         div{
             filter: blur(0px);

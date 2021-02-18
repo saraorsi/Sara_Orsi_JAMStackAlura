@@ -12,8 +12,8 @@ const Container = styled.div`
       ${breakpointsMedia({
   xs: css`
         max-width: initial;
-        padding-right: 3rem;
-      padding-left: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
       `,
   sm: css`
         max-width: 576px; 

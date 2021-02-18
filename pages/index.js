@@ -24,6 +24,27 @@ export default function Home() {
     }
   ]
 
+  const projects = [
+    {
+      date: '2020',
+      title: 'Galerias Municipais',
+      info: 'Web Design / Front End / Wordpress',
+      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+    },
+    {
+      date: '2020',
+      title: 'Galeria Zé dos Bois',
+      info: 'Web Design / Front End / Wordpress',
+      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+    },
+    {
+      date: '2020',
+      title: 'Galeria Zé dos Bois',
+      info: 'Web Design / Front End / Wordpress',
+      img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
+    }
+  ]
+
   return (
     <>
       <Capa />
@@ -66,42 +87,24 @@ export default function Home() {
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Col
-              value={{
-                xs: 12,
-                md: 4
-              }}
-            >
-              <Card
-                date={'2020'}
-                title={'Galerias Municipais'}
-                info={'Web Design / Front End / Wordpress'}
-              />
-            </Grid.Col>
-            <Grid.Col
-              value={{
-                xs: 12,
-                md: 4
-              }}
-            >
-              <Card
-                date={'2020'}
-                title={'Zé dos Bois'}
-                info={'Web Design / Front End / Wordpress'}
-              />
-            </Grid.Col>
-            <Grid.Col
-              value={{
-                xs: 12,
-                md: 4
-              }}
-            >
-              <Card
-                date={'2020'}
-                title={'Zé dos Bois'}
-                info={'Web Design / Front End / Wordpress'}
-              />
-            </Grid.Col>
+          {projects.map((item, i) => {
+              return(
+              <Grid.Col
+                key={i}
+                value={{
+                  xs: 12,
+                  md: 4
+                }}
+              >
+                <Card
+                  date={item.date}
+                  title={item.title}
+                  info={item.info}
+                  image={item.img}
+                />
+              </Grid.Col>
+              )
+            })}
           </Grid.Row>
         </Grid.Container>
       </WrapperProjetos>
