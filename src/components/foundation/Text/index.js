@@ -28,12 +28,8 @@ export const TextStyleVariantsMap = {
         font-size: ${({ theme }) => theme.typographyVariants.paragraph1.fontSize};
         line-height: ${({ theme }) => theme.typographyVariants.paragraph1.lineHeight};
         font-weight: ${({ theme }) => theme.typographyVariants.paragraph1.fontWeight};
+        letter-spacing: ${({ theme }) => theme.typographyVariants.paragraph1.letterSpacing};
     `,
-    smallestException: css`
-        font-size: ${({ theme }) => theme.typographyVariants.smallestException.fontSize};
-        line-height: ${({ theme }) => theme.typographyVariants.smallestException.lineHeight};
-        font-weight: ${({ theme }) => theme.typographyVariants.smallestException.fontWeight};
-    `
 }
 
 

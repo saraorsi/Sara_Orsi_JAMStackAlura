@@ -1,9 +1,9 @@
 export const typographyVariants = {
   // [title]
   title: {
-    fontSize: '7.594rem',
+    fontSize: '11.391rem',
     fontWeight: '400',
-    lineHeight: 1.25,
+    lineHeight: 1,
     letterSpacing: '.04em'
   },
   // [subTitle]
@@ -25,6 +25,7 @@ export const typographyVariants = {
   paragraph1: {
     fontSize: '1rem',
     fontWeight: '400',
-    lineHeight: 1.25, // 125%
+    lineHeight: 1.25,
+    letterSpacing: '.05em'
   },
 }; 

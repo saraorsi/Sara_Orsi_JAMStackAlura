@@ -10,6 +10,7 @@ const CardWrapper = styled.div`
     padding-bottom: 55%;
     background: #FFF;
     border-radius: 1.5rem;
+    text-shadow: .1em .1em .2em ${({ theme }) => theme.colors.primary.main.color};
     &:hover{
         div{
             filter: blur(0px);
@@ -37,6 +38,7 @@ CardWrapper.Date = styled.div`
     top: 1.5rem;
     text-align: center;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 `
 
 CardWrapper.Title = styled.div` 
@@ -49,7 +51,6 @@ CardWrapper.Title = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    text-shadow: .05em .05em .1em ${({ theme }) => theme.colors.primary.main.color};
 `
 
 CardWrapper.Info = styled.div`
@@ -57,6 +58,7 @@ CardWrapper.Info = styled.div`
     bottom: 1.5rem;
     text-align: center;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 `
 
 export default function Card({ date, title, info, image }) {

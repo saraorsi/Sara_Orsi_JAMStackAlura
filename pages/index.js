@@ -11,14 +11,14 @@ export default function Home() {
 
   const hightlights = [
     {
-      title: '2020',
-      date: 'Galerias Municipais',
+      date: '2020',
+      title: 'Galerias Municipais',
       info: 'Web Design / Front End / Wordpress',
       img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
     },
     {
-      title: '2020',
-      date: 'Galeria Zé dos Bois',
+      date: '2020',
+      title: 'Galeria Zé dos Bois',
       info: 'Web Design / Front End / Wordpress',
       img: 'https://2020.criatech.pt/imgs/program/05_Sara_Orsi1080.jpg'
     }
