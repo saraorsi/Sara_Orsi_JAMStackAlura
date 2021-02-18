@@ -16,7 +16,7 @@ export const typographyVariants = {
 
     // [title1]
     title1: {
-      fontSize: '2.25rem',
+      fontSize: '3rem',
       fontWeight: '400',
       lineHeight: 1,
       letterSpacing: '.05em'
@@ -26,6 +26,6 @@ export const typographyVariants = {
     fontSize: '1rem',
     fontWeight: '400',
     lineHeight: 1.25,
-    letterSpacing: '.05em'
+    letterSpacing: '.02em'
   },
 }; 

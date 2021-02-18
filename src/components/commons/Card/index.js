@@ -51,7 +51,7 @@ CardWrapper.Title = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 `
 
 CardWrapper.Info = styled.div`
@@ -60,6 +60,7 @@ CardWrapper.Info = styled.div`
     text-align: center;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    ${TextStyleVariantsMap.paragraph1}
 `
 
 export default function Card({ date, title, info, image }) {

@@ -30,7 +30,7 @@ export default function Capa() {
                 funfuns
             </Text>
             <Text
-                variant="subTitle"
+                variant="paragraph1"
                 tag="div"
                 style={{fontFamily:'Arial'}}
             >

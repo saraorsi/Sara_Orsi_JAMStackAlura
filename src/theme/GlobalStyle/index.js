@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   
 
     :root{
-        font-size: 1.1vw;
+        font-size: 1.2vw;
     }
 
     html,
