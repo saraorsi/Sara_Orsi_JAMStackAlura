@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>-- funfuns --- web studio --</title>
+        <title>!-- funfuns --- web studio -- !</title>
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
