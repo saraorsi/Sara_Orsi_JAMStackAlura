@@ -1,7 +1,6 @@
-import styled, { css } from 'styled-components'
-import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia'
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 import { propToStyle } from '../../../../theme/utils/propToStyle';
-
 
 const Container = styled.div`
       width: 100%;
@@ -10,22 +9,22 @@ const Container = styled.div`
       margin-right: auto;
       margin-left: auto;
       ${breakpointsMedia({
-  xs: css`
+    xs: css`
 
         max-width: initial;
         padding-right: 2rem;
         padding-left: 2rem;
       `,
 
-  md: css`
+    md: css`
 
         padding-right: 3rem;
       padding-left: 3rem;
       `,
 
-})}
+  })}
 ${propToStyle('marginTop')}
-    `
+    `;
 
 const Col = styled.div`
   padding-right: .75rem;
@@ -114,10 +113,6 @@ Col.defaultProps = {
   offset: {},
 };
 
-
-
-
-
 export const Grid = {
   Container,
   Row: styled.div`
@@ -126,5 +121,5 @@ export const Grid = {
         margin-right: -.75rem;
         margin-left: -.75rem;
     `,
-  Col
-}
+  Col,
+};

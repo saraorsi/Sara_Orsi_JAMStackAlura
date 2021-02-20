@@ -1,49 +1,48 @@
-import styled from 'styled-components'
-import { Grid } from '../src/components/foundation/layout/Grid'
-import Capa from '../src/components/commons/Capa'
-import WrapperProjetos from '../src/components/commons/WrapperProjetos'
-import Menu from '../src/components/commons/Menu'
-import Card from '../src/components/commons/Card'
-import SectionTitle from '../src/components/commons/SectionTitle'
-import Footer from '../src/components/commons/Footer'
+import React from 'react';
+import { Grid } from '../src/components/foundation/layout/Grid';
+import Capa from '../src/components/commons/Capa';
+import WrapperProjetos from '../src/components/commons/WrapperProjetos';
+import Menu from '../src/components/commons/Menu';
+import Card from '../src/components/commons/Card';
+import SectionTitle from '../src/components/commons/SectionTitle';
+import Footer from '../src/components/commons/Footer';
 
 export default function Home() {
-
   const hightlights = [
     {
       date: '2020',
       title: 'Galerias Municipais',
       info: 'Web Design / Front End / Wordpress',
-      img: '/images/galerias-municipais.jpg'
+      img: '/images/galerias-municipais.jpg',
     },
     {
       date: '2020',
       title: 'Galeria Zé dos Bois',
       info: 'Web Design / Front End / Wordpress',
-      img: '/images/ze-dos-bois.jpg'
-    }
-  ]
+      img: '/images/ze-dos-bois.jpg',
+    },
+  ];
 
   const projects = [
     {
       date: '2020',
       title: 'Rialto6',
       info: 'Web Design / Front End / Wordpress',
-      img: '/images/rialto6.jpg'
+      img: '/images/rialto6.jpg',
     },
     {
       date: '2020',
       title: 'Doclisboa',
       info: 'Web Design / Front End / Wordpress',
-      img: '/images/doclisboa.jpg'
+      img: '/images/doclisboa.jpg',
     },
     {
       date: '2020',
       title: 'Air 351',
       info: 'Web Design / Front End / Wordpress',
-      img: '/images/air351.jpg'
-    }
-  ]
+      img: '/images/air351.jpg',
+    },
+  ];
 
   return (
     <>
@@ -57,13 +56,12 @@ export default function Home() {
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            {hightlights.map((item, i) => {
-              return(
+            {hightlights.map((item) => (
               <Grid.Col
-                key={i}
+                key={item.title}
                 value={{
                   xs: 12,
-                  md: 6
+                  md: 6,
                 }}
               >
                 <Card
@@ -73,8 +71,7 @@ export default function Home() {
                   image={item.img}
                 />
               </Grid.Col>
-              )
-            })}
+            ))}
 
           </Grid.Row>
         </Grid.Container>
@@ -87,13 +84,12 @@ export default function Home() {
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-          {projects.map((item, i) => {
-              return(
+            {projects.map((item) => (
               <Grid.Col
-                key={i}
+                key={item.title}
                 value={{
                   xs: 12,
-                  md: 4
+                  md: 4,
                 }}
               >
                 <Card
@@ -103,12 +99,11 @@ export default function Home() {
                   image={item.img}
                 />
               </Grid.Col>
-              )
-            })}
+            ))}
           </Grid.Row>
         </Grid.Container>
       </WrapperProjetos>
       <Footer />
     </>
-  )
+  );
 }
